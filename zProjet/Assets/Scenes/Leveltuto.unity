@@ -26481,10 +26481,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.8122888, y: 7.132614}
+  - {x: -7.734728, y: 5.141873}
   - {x: -7.799276, y: -9.009274}
   - {x: -6.593765, y: -8.989249}
   - {x: -6.5992904, y: -2.3868198}
+  - {x: -4.8511662, y: -2.3882756}
+  - {x: -4.17767, y: -1.7738783}
+  - {x: -3.5714295, y: -1.7769318}
+  - {x: -3.040227, y: -1.2148342}
+  - {x: -0.61766, y: -1.2154441}
+  - {x: 0.6269761, y: -2.3779721}
   - {x: 1.8207164, y: -2.391194}
   - {x: 1.8286176, y: -2.997293}
   - {x: 2.445914, y: -3.018958}
@@ -26698,6 +26704,7 @@ GameObject:
   - component: {fileID: 1216282631}
   - component: {fileID: 1216282633}
   - component: {fileID: 1216282632}
+  - component: {fileID: 1216282634}
   m_Layer: 0
   m_Name: Tilemap (1)
   m_TagString: Untagged
@@ -27120,6 +27127,46 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &1216282634
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216282630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -7.5304117, y: 4.6931295}
+  - {x: -5.2338934, y: 6.979525}
+  - {x: -4.585237, y: 6.95803}
+  - {x: -4.0801554, y: 6.457835}
+  - {x: -1.0945385, y: 6.4514203}
+  - {x: 0.10710454, y: 5.2655725}
+  - {x: 2.0596924, y: 5.246395}
+  - {x: 3.2644098, y: 6.4343543}
+  - {x: 3.913563, y: 6.4366593}
+  - {x: 4.4111943, y: 6.969021}
+  - {x: 7.674961, y: 6.9614596}
+  - {x: 7.6871595, y: 6.6844287}
+  - {x: 8.315496, y: 6.684541}
+  - {x: 8.318854, y: 6.112358}
+  - {x: 8.887482, y: 6.089619}
+  - {x: 8.892137, y: 5.492415}
+  - {x: 9.487593, y: 5.5036926}
+  - {x: 9.516035, y: 4.913216}
+  - {x: 13.186034, y: 4.8510866}
+  - {x: 13.176216, y: 5.4665337}
+  - {x: 13.6943, y: 5.468724}
+  - {x: 13.65061, y: 5.765985}
+  - {x: 14.549736, y: 5.736269}
+  - {x: 14.591606, y: 5.7331944}
 --- !u!1 &1588158348
 GameObject:
   m_ObjectHideFlags: 0
@@ -27153,7 +27200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumphigh: 5
+  jumphigh: 7
   rb: {fileID: 1588158350}
 --- !u!50 &1588158350
 Rigidbody2D:
@@ -27260,8 +27307,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588158348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.79, y: 2.33, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: -2.53, y: -0.35, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -27307,6 +27354,7 @@ GameObject:
   - component: {fileID: 2010797717}
   - component: {fileID: 2010797716}
   - component: {fileID: 2010797715}
+  - component: {fileID: 2010797718}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27349,7 +27397,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -27379,3 +27427,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010797718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010797714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2764b12ed737e449a5e15cfa3297bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personnage: {fileID: 1588158348}
