@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeakpointE : MonoBehaviour
 {
-    public GameObject ennemi;
+    public GameObject ennemi; // cette variable est initialisé directement dans l'interface d'unity via l'onglet inspector 
     BoxCollider2D BDennemi;
     BoxCollider2D BDplayer;
     GameObject player;
@@ -23,7 +23,7 @@ public class WeakpointE : MonoBehaviour
 
         if (BDennemi.IsTouching(BDplayer))
         {
-            bodyplayer.velocity += new Vector2(0, 30f);
+            bodyplayer.velocity += new Vector2(0, 10f); //ceci permet  de produire un effet de rebond tout en tuant l'ennemi
             GameObject.Destroy(ennemi);
         }
     }

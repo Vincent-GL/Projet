@@ -7,16 +7,13 @@ using Photon.Realtime;
 
 public class launcher : MonoBehaviourPunCallbacks
 {
-    string Version = "0.1";
-
-    [SerializeField] private GameObject usernameMenu;
-    [SerializeField] private GameObject ConnectPannel; // Sert à choisir de créer ou rejoindre une partie
-    [SerializeField] private GameObject quickmatchbutton;
+   
+    [SerializeField] private GameObject ConnectPannel; // un menu qui Servira à choisir de créer ou rejoindre une partie
+    [SerializeField] private GameObject quickmatchbutton; // une fonctionnalité qui sera implémenté plus tard
 
     [SerializeField] private InputField JoinGameInput;
     [SerializeField] private InputField CreateGameInput;
-    [SerializeField] private InputField usernameInput;
-
+    string Version = "0.1";
     void Awake()
     {
         PhotonNetwork.GameVersion = Version;
@@ -24,10 +21,6 @@ public class launcher : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    void Start()
-    {
-        usernameMenu.SetActive(true);
-    }
     public override void OnConnectedToMaster()
     {
         Debug.Log("successfully connected");
@@ -37,16 +30,7 @@ public class launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Disconnected from server : " + cause);
     }
-    public void SetUserName()
-    {
-        usernameMenu.SetActive(false);
-        if (usernameInput.text.Length > 0)
-            PhotonNetwork.NickName = (usernameInput.text);
-        else
-        {
-            PhotonNetwork.NickName = "Anonyme";
-        }
-    }
+   
     public void CreateRoom()
     {
         PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions { MaxPlayers = 2 }, null);
