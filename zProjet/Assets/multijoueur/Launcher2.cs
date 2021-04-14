@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using Photon.Realtime;
 public class Launcher2 : MonoBehaviourPunCallbacks
 {
+    [SerializeField]
+    private byte maxPlayersPerRoom = 4;
     string GameVersion = "0.1";
   void Awake()
     {
@@ -44,9 +46,10 @@ public class Launcher2 : MonoBehaviourPunCallbacks
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log("couldn't join a random room");
-        RoomOptions Roptions = new RoomOptions();
-        Roptions.MaxPlayers = 2;
-        PhotonNetwork.CreateRoom(null, Roptions);
+     //   RoomOptions Roptions = new RoomOptions();
+       // Roptions.MaxPlayers = 2;
+        PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
+        //PhotonNetwork.CreateRoom(null, Roptions);
     }
     public override void OnJoinedRoom()
     {
