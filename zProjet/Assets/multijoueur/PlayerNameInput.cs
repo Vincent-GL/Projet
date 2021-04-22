@@ -6,22 +6,33 @@ using UnityEngine.UI;
 using Photon.Realtime;
 public class PlayerNameInput : MonoBehaviour
 {
-    [SerializeField] private GameObject usernameMenu;
     [SerializeField] private InputField usernameInput;
-
+    const string playerNamePrefKey = "NomJoueur";
     void Start()
     {
-        usernameMenu.SetActive(true);
+        string name = "Anonyme";
+        if(usernameInput!=null)
+        {
+            if(PlayerPrefs.HasKey(playerNamePrefKey))
+            {
+                name = PlayerPrefs.GetString(playerNamePrefKey);
+                usernameInput.text = name;
+            }
+        }
+        PhotonNetwork.NickName = name;
     }
 
-    public void SetUserName()
+    public void SetUserName(string nom)
     {
-        usernameMenu.SetActive(false);
-        if (usernameInput.text.Length > 0)
-            PhotonNetwork.NickName = (usernameInput.text);
-        else
+        if (nom.Length==0)
         {
             PhotonNetwork.NickName = "Anonyme";
         }
+        else
+        {
+              PhotonNetwork.NickName = (nom);
+            PlayerPrefs.SetString(playerNamePrefKey, nom);
+        }
+       
     }
 }
