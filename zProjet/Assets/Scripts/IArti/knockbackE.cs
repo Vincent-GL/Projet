@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class knockbackE : MonoBehaviour
 {
-    /*
-    [SerializeField] public Player playerscript;
+    
+    Joueurblesse playerscript;
     GameObject somePlayer;
     BoxCollider2D BoxCPlayer;
     Rigidbody2D RBodyPlayer;
@@ -15,6 +15,7 @@ public class knockbackE : MonoBehaviour
     {
         enemyRB = GetComponent<Rigidbody2D>();
         somePlayer = GameObject.FindGameObjectWithTag("Player");
+        playerscript = somePlayer.GetComponent<Joueurblesse>();
         BoxCPlayer = somePlayer.GetComponent<BoxCollider2D>();
         enemyBC = GetComponent<BoxCollider2D>();
     }
@@ -25,12 +26,12 @@ public class knockbackE : MonoBehaviour
         {
             if (enemyRB.transform.position.x < somePlayer.transform.position.x)
             {
-                playerscript.Knocked(true);
+                playerscript.Hurt(true);
             }
             else
             {
-                playerscript.Knocked(false);
+                playerscript.Hurt(false);
             }
         }
-    }*/
+    }
 }

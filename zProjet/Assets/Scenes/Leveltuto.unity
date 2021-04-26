@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 839793887}
   - component: {fileID: 839793891}
   - component: {fileID: 839793890}
+  - component: {fileID: 839793892}
   m_Layer: 0
   m_Name: "jinmosit\xE9"
   m_TagString: Untagged
@@ -299,6 +300,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.7553453, y: 15.752109}
   m_EdgeRadius: 0
+--- !u!114 &839793892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839793886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f026e4c5d26a147bfbd06b041a9c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &923265487
 GameObject:
   m_ObjectHideFlags: 0
@@ -26745,7 +26758,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 647910698ad97de43a7c9e426a8d6df9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27181,6 +27194,7 @@ GameObject:
   - component: {fileID: 1588158350}
   - component: {fileID: 1588158349}
   - component: {fileID: 1588158351}
+  - component: {fileID: 1588158354}
   m_Layer: 0
   m_Name: O'naute
   m_TagString: Player
@@ -27314,6 +27328,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1588158354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588158348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff3ff0681ff7b7409e64b522648e4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1588158350}
 --- !u!1 &1631479606
 GameObject:
   m_ObjectHideFlags: 0
