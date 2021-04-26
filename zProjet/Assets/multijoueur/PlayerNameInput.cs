@@ -4,12 +4,15 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 using Photon.Realtime;
+
+[RequireComponent(typeof(InputField))]
 public class PlayerNameInput : MonoBehaviour
 {
-    [SerializeField] private InputField usernameInput;
+   
     const string playerNamePrefKey = "NomJoueur";
     void Start()
     {
+        InputField usernameInput = this.GetComponent<InputField>();
         string name = "Anonyme";
         if(usernameInput!=null)
         {

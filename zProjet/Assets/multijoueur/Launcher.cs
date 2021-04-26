@@ -4,22 +4,25 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 using Photon.Realtime;
-public class Launcher2 : MonoBehaviourPunCallbacks
+public class Launcher : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private byte maxPlayersPerRoom = 4;
+    private GameObject controlPanel;
+    [SerializeField]
+    private GameObject progressPanel;
+    private byte maxPlayersPerRoom = 2;
     string GameVersion = "0.1";
-  void Awake()
+    void Awake()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
-    }
-    void Start()
-    {
-        Connect();
+        progressPanel.SetActive(false);
+        controlPanel.SetActive(true);
     }
 
     public void Connect()
     {
+        progressPanel.SetActive(true);
+        controlPanel.SetActive(false);
         if (PhotonNetwork.IsConnected)
         {
             PhotonNetwork.JoinRandomRoom();
@@ -40,14 +43,16 @@ public class Launcher2 : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
+        progressPanel.SetActive(false);
+        controlPanel.SetActive(true);
         Debug.LogWarningFormat("Disconnected for the following reason : {0}", cause);
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log("couldn't join a random room");
-     //   RoomOptions Roptions = new RoomOptions();
-       // Roptions.MaxPlayers = 2;
+        //   RoomOptions Roptions = new RoomOptions();
+        // Roptions.MaxPlayers = 2;
         PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
         //PhotonNetwork.CreateRoom(null, Roptions);
     }
