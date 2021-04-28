@@ -59,5 +59,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("Successfully joined a room");
+        PhotonNetwork.LoadLevel("Room for 2");
     }
 }
