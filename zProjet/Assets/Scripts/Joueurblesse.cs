@@ -5,21 +5,29 @@ using UnityEngine;
 public class Joueurblesse : MonoBehaviour
 {
     public Rigidbody2D rb;
-    int health = 5;
+    public int health = 5;
+    public Vector3 spawnPoint;
+    public int lives;
     public void Hurt(bool right)// ajouter un int pour differencier le nombre de dégats infligés ?
     {
         health--;
-        Isknocked(right);
-        if(health<=0)
+        if (health <= 0)
         {
             IsDead();
+            lives--;
+            health = 5;
         }
-
+        else
+            Isknocked(right);
+        
     }
 
-    private void IsDead()
+    void IsDead()
     {
+        this.transform.position = spawnPoint;
     }
+
+
     public void IsHealed(int amount)
     {
         health += amount;

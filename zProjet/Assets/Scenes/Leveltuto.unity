@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SettingsWindow: {fileID: 0}
-  pauseMenuUI: {fileID: 113150745}
+  pauseMenuUI: {fileID: 0}
   settingsWindow: {fileID: 0}
 --- !u!1 &839793886
 GameObject:
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 839793892}
   m_Layer: 0
   m_Name: "jinmosit\xE9"
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27930,6 +27930,28 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7159900160937440233}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1588158352 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7159900159618935911, guid: fe9ae975dc068554d8476671f5653e19,
+    type: 3}
+  m_PrefabInstance: {fileID: 7159900160937440233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588158355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588158348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff3ff0681ff7b7409e64b522648e4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1588158352}
+  health: 5
+  spawnPoint: {x: -1, y: 0, z: 0}
+  lives: 3
 --- !u!1 &1618125732
 GameObject:
   m_ObjectHideFlags: 0
@@ -28696,6 +28718,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -418092081849667873, guid: fe9ae975dc068554d8476671f5653e19,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7159900159618935909, guid: fe9ae975dc068554d8476671f5653e19,
         type: 3}
       propertyPath: m_Name
