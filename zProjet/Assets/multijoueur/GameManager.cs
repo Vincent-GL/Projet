@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
@@ -13,7 +12,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         
         if(playerstructure!=null)
         {
-            Debug.Log("not null");
             PhotonNetwork.Instantiate(this.playerstructure.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
         }
         else
@@ -50,21 +48,20 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
     public override void OnLeftRoom()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); // charge la scène de choix du nom pour rejoindre un match
     }
 
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
     }
-
+    
     void LoadArena()
     {
         if (!PhotonNetwork.IsMasterClient)
         {
             Debug.LogError("PhotonNetwork : Trying to Load a level but we are not the master Client");
         }
-       
         PhotonNetwork.LoadLevel("Room for 2");
     }
 }

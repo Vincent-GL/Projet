@@ -34,6 +34,7 @@ public class Joueurblesse : MonoBehaviour
         if(health>5)
         { health = 5; }
     }
+    
     private void Isknocked(bool right)//si vrai le joueur est repoussé à droite sinon à gauche
     {
         Vector2 force;
