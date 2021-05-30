@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 966fddcb612478c4a98b0c6ae19e3d8d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - deatheffect: {fileID: 7273687896936038944, guid: 7a0daa5f63984e74187aa400847ca0f3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

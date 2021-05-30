@@ -9,10 +9,11 @@ public class WeakpointE : MonoBehaviour
     BoxCollider2D BDplayer;
     GameObject player;
     Rigidbody2D bodyplayer;
+    public int health;
+    public GameObject deatheffect;
     // Start is called before the first frame update
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player");
         BDennemi = GetComponent<BoxCollider2D>();
         BDplayer = player.GetComponent<BoxCollider2D>();
@@ -23,8 +24,13 @@ public class WeakpointE : MonoBehaviour
 
         if (BDennemi.IsTouching(BDplayer))
         {
+            health--;
             bodyplayer.velocity += new Vector2(0, 10f); //ceci permet  de produire un effet de rebond tout en tuant l'ennemi
-            GameObject.Destroy(ennemi);
+            if(health<=0)
+            {
+                Instantiate(deatheffect, transform.position, Quaternion.identity);
+                GameObject.Destroy(ennemi);
+            }
         }
     }
 }

@@ -9,7 +9,6 @@ public class PatrolE : MonoBehaviour
     private int destination;
     private Transform positionpro;
     int longueur;
-
     void Start()
     {
         positionpro = chemin[destination];

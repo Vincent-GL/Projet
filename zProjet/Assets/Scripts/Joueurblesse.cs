@@ -19,7 +19,6 @@ public class Joueurblesse : MonoBehaviour
         }
         else
             Isknocked(right);
-        
     }
 
     void IsDead()
