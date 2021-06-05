@@ -4,17 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
-public class joueur_multi : MonoBehaviour
+public class joueur_multi : MonoBehaviourPunCallbacks
 {
     public Text NomJoueur;
     public float speed;
     public float jumphigh;
     public Rigidbody2D rb;
     private bool IsGrounded = false;
-
-    void Start()
+    public static GameObject LocalPlayerInstance;
+    void Awake()
     {
         NomJoueur.text = PhotonNetwork.NickName;
+        if(photonView.IsMine)
+        {
+           LocalPlayerInstance = this.gameObject;
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
     void Update()
     {
