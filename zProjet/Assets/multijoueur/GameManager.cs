@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
+        Debug.Log("leaving");
     }
     
     void LoadArena()
