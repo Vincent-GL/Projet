@@ -10,8 +10,7 @@ public class Eggammo : MonoBehaviour
     {
         if (Random.Range(0f, 2f) > 1f)
         {
-            rb.velocity = -transform.up * speed;
-
+           rb.velocity = -transform.up * speed;
         }
         else
         {
