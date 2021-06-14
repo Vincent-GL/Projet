@@ -26,7 +26,7 @@ public class knockbackE : MonoBehaviour
     {
             if (enemyBC.IsTouching(BoxCPlayer) && countdown<=0)
             {
-            countdown += 130;
+            countdown += 10;
             if (enemyRB.transform.position.x < somePlayer.transform.position.x)
                 {
                     playerscript.Hurt(true);

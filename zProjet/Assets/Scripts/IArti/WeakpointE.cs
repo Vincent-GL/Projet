@@ -24,7 +24,7 @@ public class WeakpointE : MonoBehaviour
         if (BDennemi.IsTouching(BDplayer))
         {
             health--;
-            bodyplayer.velocity += new Vector2(0, 10f); //ceci permet  de produire un effet de rebond tout en blessant l'ennemi
+            bodyplayer.velocity += new Vector2(0, 2f); //ceci permet  de produire un effet de rebond tout en blessant l'ennemi
             if(health<=0)
             {
               //  Instantiate(deatheffect, transform.position, Quaternion.identity);

@@ -12,7 +12,6 @@ public class missile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("lancé");
         cible = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         movedir = (cible.transform.position - transform.position).normalized * speed;
@@ -20,7 +19,6 @@ public class missile : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D cible)
     {
-        Debug.Log("hit !");
         Joueurblesse joueur = cible.GetComponent<Joueurblesse>();
         if (joueur != null)//la cible touchée est le joueur
         {
