@@ -5,7 +5,7 @@ using UnityEngine;
 public class missile : MonoBehaviour
 {
 
-    private float speed = 10f;
+    private float speed = 15f;
     public Rigidbody2D rb;
     GameObject cible;
     Vector2 movedir;
@@ -15,7 +15,7 @@ public class missile : MonoBehaviour
         cible = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         movedir = (cible.transform.position - transform.position).normalized * speed;
-        if(cible.transform.position.x<transform.position.x)
+        if(movedir.x<0)//cible.transform.position.x<transform.position.x)
         {
             rb.SetRotation(360f);
         }
