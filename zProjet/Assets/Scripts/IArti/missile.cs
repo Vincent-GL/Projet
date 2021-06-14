@@ -15,6 +15,10 @@ public class missile : MonoBehaviour
         cible = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         movedir = (cible.transform.position - transform.position).normalized * speed;
+        if(cible.transform.position.x<transform.position.x)
+        {
+            rb.SetRotation(360f);
+        }
         rb.velocity = new Vector2(movedir.x, movedir.y);
     }
     void OnTriggerEnter2D(Collider2D cible)

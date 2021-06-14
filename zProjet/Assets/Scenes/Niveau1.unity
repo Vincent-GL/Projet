@@ -3488,7 +3488,7 @@ GameObject:
   - component: {fileID: 671976455}
   - component: {fileID: 671976457}
   m_Layer: 0
-  m_Name: "jinmosit\xE9 (1)"
+  m_Name: HiddenEnnemi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3507,7 +3507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firepoint: {fileID: 1740372703}
-  projectile: {fileID: 2040472018311404353, guid: 66124b936dbe82e4b889afe0682893db,
+  projectile: {fileID: 3090117472499264540, guid: 0227def3b88ba40418d8f32979008161,
     type: 3}
   nextfire: 0
   fireRate: 2
@@ -3627,7 +3627,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671976454}
-  m_LocalRotation: {x: -0, y: -0, z: -0.71999675, w: 0.6939775}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6965729, w: 0.71748596}
   m_LocalPosition: {x: 0.06, y: 12.83, z: 0}
   m_LocalScale: {x: 0.12934718, y: -0.103672676, z: 1}
   m_Children:
@@ -3635,7 +3635,7 @@ Transform:
   - {fileID: 1740372703}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -92.108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -88.30501}
 --- !u!1 &803393089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 803393089, guid: b27518f2ea9a4a944a3ac31db07486aa,
@@ -18016,13 +18016,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740372702}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.5, y: -0.9, z: 0}
+  m_LocalRotation: {x: 0.0039707385, y: -0.004367197, z: 0.65053433, w: 0.7594539}
+  m_LocalPosition: {x: -8.03, y: -0.47, z: 0}
   m_LocalScale: {x: 7.731131, y: 9.74277, z: 1}
   m_Children: []
   m_Father: {fileID: 671976461}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.671, y: -0.08400001, z: 81.165}
 --- !u!1 &1746014709
 GameObject:
   m_ObjectHideFlags: 0
