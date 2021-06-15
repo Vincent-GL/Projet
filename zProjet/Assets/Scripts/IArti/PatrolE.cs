@@ -9,8 +9,10 @@ public class PatrolE : MonoBehaviour
     private int destination;
     private Transform positionpro;
     int longueur;
+    public Animator an;
     void Start()
     {
+        an = GetComponent<Animator>();
         positionpro = chemin[destination];
         longueur = chemin.Length;
     }
@@ -22,6 +24,11 @@ public class PatrolE : MonoBehaviour
         {
             destination = (destination + 1) % longueur;
             positionpro = chemin[destination];
+            if(an!=null)
+            {
+                
+                an.SetBool("turn", !(an.GetBool("turn")));
+            }
         }
     }
 }
