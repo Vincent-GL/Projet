@@ -6,6 +6,7 @@ public class Eggammo : MonoBehaviour
 {
     private float speed = 10f;
     public Rigidbody2D rb;
+    private int countdown;
     void Start()
     {
         if (Random.Range(0f, 2f) > 1f)
@@ -15,6 +16,7 @@ public class Eggammo : MonoBehaviour
         else
         {
             rb.velocity = transform.right * speed;
+            rb.SetRotation(30f);
         }
     }
     void OnTriggerEnter2D(Collider2D cible)
