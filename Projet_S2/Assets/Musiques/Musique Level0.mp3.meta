@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Projet_S2/Assets/Musiques/Musique MenuPrincipal.mp3.meta
+guid: d2cf6b96712c7bb4db8bf40d8f70766a
+=======
+guid: 3617a457e0121f246b0cb3b6ef43e94e
+>>>>>>> c53fc990e2d354de27b6a99fb69b1efefddbb935:Projet_S2/Assets/Musiques/Musique Level0.mp3.meta
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
