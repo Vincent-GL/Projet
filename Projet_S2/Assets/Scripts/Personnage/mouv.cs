@@ -22,6 +22,16 @@ public class mouv : MonoBehaviour
         {
             jump();
         }
+
+        float x = Input.GetAxisRaw("Horizontal");
+        if (x == -1)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (x == 1)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     public void jump()
