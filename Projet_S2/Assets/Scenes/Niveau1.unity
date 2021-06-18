@@ -19242,6 +19242,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1698242006
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698242002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75c135fa7ef1c0145a008288dcb8b003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1698242007 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 5157838350498250957, guid: b27518f2ea9a4a944a3ac31db07486aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 5107110772664056900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1698242010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698242002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c419066fdeacfae4b89bec666d79593b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumphigh: 7
+  rb: {fileID: 1698242007}
+--- !u!114 &1698242011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698242002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2e639d6f2a4ef42aec99f27149a73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
 --- !u!1 &1716798977
 GameObject:
   m_ObjectHideFlags: 0
@@ -23984,6 +24037,41 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7679436
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.6805768
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.006161213
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.016622484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.010000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157838350498250956, guid: b27518f2ea9a4a944a3ac31db07486aa,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.6299999
+      objectReference: {fileID: 0}
     - target: {fileID: 5157838350498250958, guid: b27518f2ea9a4a944a3ac31db07486aa,
         type: 3}
       propertyPath: SoundJump
@@ -24032,7 +24120,7 @@ PrefabInstance:
     - target: {fileID: 5157838350498250962, guid: b27518f2ea9a4a944a3ac31db07486aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.17
+      value: -4.94
       objectReference: {fileID: 0}
     - target: {fileID: 5157838350498250962, guid: b27518f2ea9a4a944a3ac31db07486aa,
         type: 3}
@@ -24080,5 +24168,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2718351880301835843, guid: 95977d448e01f9b429da05c69a553850,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5157838350498250958, guid: b27518f2ea9a4a944a3ac31db07486aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b27518f2ea9a4a944a3ac31db07486aa, type: 3}

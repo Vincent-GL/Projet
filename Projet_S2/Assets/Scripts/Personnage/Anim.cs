@@ -6,23 +6,66 @@ public enum StateAnim
 {
     course,
     idle,
-    grounded
+    grounded,
+    jump
 }
 
 public class Anim : MonoBehaviour
 {
     private Animator Animat;
     private mouv player;
-    //private playerMotor playermotor;
+    public StateAnim state;
     
     void Start()
     {
-        
+        Animat = GetComponent<Animator>();
+        player= GetComponent<mouv>();
     }
 
     
     void Update()
     {
-        
+        bool run = player.X == 1 || player.X == -1;
+        if (run&&player.Grounded)
+        {
+            state = StateAnim.course;
+            Debug.Log("cours");
+            
+        }
+        else if (!run && player.Grounded)
+        {
+            state = StateAnim.idle;
+            Debug.Log("rien");
+            
+        }
+        if (!player.Grounded)
+        {
+            state = StateAnim.jump;
+            Debug.Log("saute");
+            
+        }
+        Animation();
+    }
+
+    private void Animation()
+    {
+        switch (state)
+        {
+            case StateAnim.idle:
+                Animat.SetBool("idle", true);
+                Animat.SetBool("course", false);
+                Animat.SetBool("jump", false);
+                break;
+            case StateAnim.course:
+                Animat.SetBool("course", true);
+                Animat.SetBool("jump", false);
+                Animat.SetBool("idle", false);
+                break;
+            case StateAnim.jump:
+                Animat.SetBool("jump", true);
+                Animat.SetBool("idle", false);
+                Animat.SetBool("course", false);
+                break;
+        }
     }
 }

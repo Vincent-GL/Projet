@@ -8,13 +8,13 @@ public class mouv : MonoBehaviour
     public float jumphigh;
     public Rigidbody2D rb;
     private bool IsGrounded = false;
-
-    public AudioClip SoundJump;
+    private float x;
+    public float X { get { return x; } }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     //saut
@@ -23,10 +23,18 @@ public class mouv : MonoBehaviour
         if (Input.GetKeyDown("space") && IsGrounded)
         {
             jump();
-            GetComponent<AudioSource>().PlayOneShot(SoundJump);
+        }
+
+        float x = Input.GetAxisRaw("Horizontal");
+        if (x == -1)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (x == 1)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
         }
     }
-
     public void jump()
     {
         rb.velocity += new Vector2(0, jumphigh);
@@ -55,4 +63,6 @@ public class mouv : MonoBehaviour
             IsGrounded = false;
         }
     }
+
+    public bool Grounded { get { return IsGrounded;} }
 }

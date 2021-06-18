@@ -28760,6 +28760,7 @@ GameObject:
   - component: {fileID: 1588158351}
   - component: {fileID: 1588158355}
   - component: {fileID: 1588158356}
+  - component: {fileID: 1588158357}
   m_Layer: 0
   m_Name: O'naute
   m_TagString: Player
@@ -28782,7 +28783,6 @@ MonoBehaviour:
   speed: 10
   jumphigh: 7
   rb: {fileID: 1588158350}
-  SoundJump: {fileID: 8300000, guid: 457bcad6c591d5f489b2871cef87c0fc, type: 3}
 --- !u!50 &1588158350
 Rigidbody2D:
   serializedVersion: 4
@@ -28821,7 +28821,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4, y: 4.34}
+    oldSize: {x: 1.9300001, y: 2.8600001}
     newSize: {x: 6.3, y: 6.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -28869,7 +28869,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3680898199905403990, guid: 95977d448e01f9b429da05c69a553850,
+  m_Sprite: {fileID: 2718351880301835843, guid: 95977d448e01f9b429da05c69a553850,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29026,6 +29026,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1588158357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588158348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2e639d6f2a4ef42aec99f27149a73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
 --- !u!1 &1617795614
 GameObject:
   m_ObjectHideFlags: 0
