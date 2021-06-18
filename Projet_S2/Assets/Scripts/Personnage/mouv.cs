@@ -9,6 +9,8 @@ public class mouv : MonoBehaviour
     public Rigidbody2D rb;
     private bool IsGrounded = false;
 
+    public AudioClip SoundJump;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +23,7 @@ public class mouv : MonoBehaviour
         if (Input.GetKeyDown("space") && IsGrounded)
         {
             jump();
-        }
-
-        float x = Input.GetAxisRaw("Horizontal");
-        if (x == -1)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else if (x == 1)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<AudioSource>().PlayOneShot(SoundJump);
         }
     }
 

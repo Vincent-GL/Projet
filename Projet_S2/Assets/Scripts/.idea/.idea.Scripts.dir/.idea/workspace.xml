@@ -20,11 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbbc0932-f874-4ca0-ba5b-21ce769bb95c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Scenes/Launcher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Launcher.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Niveau1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Niveau1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/NouveauNiveau.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NouveauNiveau.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Paramètres.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Paramètres.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Room for 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Room for 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Room for 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IArti/prefab/New Piskel-1.png.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/IArti/prefab/New Piskel-1.png.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Personnage/.idea/.idea.Personnage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Personnage/.idea/.idea.Personnage.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +57,8 @@
         <option value="$PROJECT_DIR$/../BoutonJouer.cs" />
         <option value="$PROJECT_DIR$/Options.cs" />
         <option value="$PROJECT_DIR$/Settings.cs" />
-        <option value="$PROJECT_DIR$/Menu.cs" />
         <option value="$PROJECT_DIR$/transitionNiveau.cs" />
+        <option value="$PROJECT_DIR$/Menu.cs" />
         <option value="$PROJECT_DIR$/SettingsMenu.cs" />
       </list>
     </option>
@@ -86,6 +94,8 @@
       <workItem from="1623591004054" duration="1817000" />
       <workItem from="1623762784288" duration="1243000" />
       <workItem from="1623784197253" duration="603000" />
+      <workItem from="1623945109782" duration="836000" />
+      <workItem from="1623955774932" duration="1237000" />
     </task>
     <servers />
   </component>

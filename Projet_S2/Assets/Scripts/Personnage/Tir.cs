@@ -16,6 +16,8 @@ public class Tir : MonoBehaviour
     public Transform firepoint;
 
     public Transform bullettrailPrefab;
+    
+    public AudioClip SoundShoot;
 
     void Update()
     {
@@ -30,6 +32,7 @@ public class Tir : MonoBehaviour
         {
             TimeToFire = Time.time + 1 / firerate;
             Shoot();
+            
         }
     }
     private void Shoot()
@@ -42,5 +45,6 @@ public class Tir : MonoBehaviour
 
         Debug.DrawLine(Firepointposition, (mousePosition - Firepointposition) * 100, Color.red);*/
         Debug.Log("fire");
+        GetComponent<AudioSource>().PlayOneShot(SoundShoot);
     }
 }

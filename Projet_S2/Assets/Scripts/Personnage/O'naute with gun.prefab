@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 13.79}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &803393091
@@ -109,7 +109,7 @@ PrefabInstance:
     - target: {fileID: 104788505770435367, guid: a546bf3c960bb4a4c9b1b131199d9e18,
         type: 3}
       propertyPath: m_Name
-      value: O'naute
+      value: O'naute with gun
       objectReference: {fileID: 0}
     - target: {fileID: 104788505770435386, guid: a546bf3c960bb4a4c9b1b131199d9e18,
         type: 3}
@@ -166,7 +166,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7877462858906803296, guid: a546bf3c960bb4a4c9b1b131199d9e18,
+        type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 603004442959061997, guid: a546bf3c960bb4a4c9b1b131199d9e18, type: 3}
+    - {fileID: 7877462858906803296, guid: a546bf3c960bb4a4c9b1b131199d9e18, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a546bf3c960bb4a4c9b1b131199d9e18, type: 3}
 --- !u!4 &5157838350498250962 stripped
 Transform:

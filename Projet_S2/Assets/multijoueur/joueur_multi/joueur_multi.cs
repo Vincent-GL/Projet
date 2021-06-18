@@ -4,15 +4,48 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
+using Photon;
 public class joueur_multi : MonoBehaviourPunCallbacks
 {
-    public Text NomJoueur;
-    public float speed;
-    public float jumphigh;
+   public  SpriteRenderer spr;
+  //  public Text NomJoueur;
+    public float speed=5f;
+    //public float jumphigh;
+     private bool IsGrounded = false;
     public Rigidbody2D rb;
-    private bool IsGrounded = false;
-    public static GameObject LocalPlayerInstance;
-    void Awake()
+    public GameObject Playercamera;
+    private void Awake()
+    {
+        if(photonView.IsMine)
+        {
+            Playercamera.SetActive(true);
+        }
+    }
+
+    private void Update()
+    {
+        if(photonView.IsMine)
+        {
+            CheckInput();
+        }
+    }
+    private void CheckInput()
+    {
+        var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
+        transform.position += move * speed * Time.deltaTime;
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            spr.flipX = true;
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            spr.flipX = false;
+        }
+
+    }
+  
+   // public static GameObject LocalPlayerInstance;
+   /* void Awake()
     {
         NomJoueur.text = PhotonNetwork.NickName;
         if(photonView.IsMine)
@@ -60,5 +93,5 @@ public class joueur_multi : MonoBehaviourPunCallbacks
         {
             IsGrounded = false;
         }
-    }
+    }*/
 }

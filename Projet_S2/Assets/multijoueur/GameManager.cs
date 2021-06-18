@@ -5,7 +5,22 @@ using Photon.Pun;
 using Photon.Realtime;
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    public GameObject playerstructure;
+    public GameObject plstruct;
+    public GameObject gamecanvas;
+    public GameObject gamecamera;
+
+    private void Awake()
+    {
+        gamecanvas.SetActive(true);
+    }
+    public void SpawnPlayer()
+    {
+        float move = Random.Range(-1f, 1f);
+        PhotonNetwork.Instantiate(plstruct.name, new Vector2(this.transform.position.x * move, this.transform.position.y+4), Quaternion.identity);
+        gamecanvas.SetActive(false);
+        gamecamera.SetActive(false);
+    }
+    /*public GameObject playerstructure;
 
     void Start()
     {
@@ -70,5 +85,5 @@ public class GameManager : MonoBehaviourPunCallbacks
             Debug.LogError("PhotonNetwork : Trying to Load a level but we are not the master Client");
         }
         PhotonNetwork.LoadLevel("Room for "+ PhotonNetwork.CurrentRoom.PlayerCount);
-    }
+    }*/
 }

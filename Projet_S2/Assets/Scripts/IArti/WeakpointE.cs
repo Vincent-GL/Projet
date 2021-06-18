@@ -11,6 +11,7 @@ public class WeakpointE : MonoBehaviour
     Rigidbody2D bodyplayer;
     public int health;
   //  public GameObject deatheffect;
+  
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -18,13 +19,14 @@ public class WeakpointE : MonoBehaviour
         BDplayer = player.GetComponent<BoxCollider2D>();
         bodyplayer = player.GetComponent<Rigidbody2D>();
     }
+    
     void Update()
     {
 
         if (BDennemi.IsTouching(BDplayer))
         {
             health--;
-            bodyplayer.velocity += new Vector2(0, 2f); //ceci permet  de produire un effet de rebond tout en blessant l'ennemi
+            bodyplayer.velocity += new Vector2(0, 2f); //ceci permet de produire un effet de rebond tout en blessant l'ennemi
             if(health<=0)
             {
               //  Instantiate(deatheffect, transform.position, Quaternion.identity);
