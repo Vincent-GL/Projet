@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Projet_S2/Assets/Musiques/Boutons.wav.meta
+guid: 0670c3ab7f7811b45bb2d9743b4913a5
+=======
+guid: 00e2b3e71165d48419357152fbded777
+>>>>>>> 509066c42e798022ff06bb82d0f14d5b4b0cd853:Projet_S2/Assets/Musiques/Musique composée jeu.wav.meta
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
