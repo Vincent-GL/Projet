@@ -23641,6 +23641,7 @@ GameObject:
   - component: {fileID: 2096545837}
   - component: {fileID: 2096545836}
   - component: {fileID: 2096545835}
+  - component: {fileID: 2096545838}
   m_Layer: 0
   m_Name: Grid
   m_TagString: sol
@@ -23889,6 +23890,44 @@ EdgeCollider2D:
   - {x: 2.8912916, y: 3.0004716}
   - {x: 6.0465307, y: 2.979832}
   - {x: 5.0601664, y: 2.111572}
+--- !u!68 &2096545838
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096545829}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -33.98705, y: 11.946643}
+  - {x: -22.04666, y: 12.03476}
+  - {x: -22.00403, y: 13.043106}
+  - {x: -20.981995, y: 13.018657}
+  - {x: -21.026215, y: 14.000598}
+  - {x: -13.99959, y: 13.9703865}
+  - {x: -15.0266695, y: 12.960539}
+  - {x: -15.042668, y: 10.761099}
+  - {x: -19.029829, y: 6.777548}
+  - {x: -19.083086, y: -13.986116}
+  - {x: -21.9509, y: -17.06291}
+  - {x: -22.892082, y: -16.22351}
+  - {x: -23.08428, y: -14.973917}
+  - {x: -23.92701, y: -13.991172}
+  - {x: -23.982992, y: -11.037488}
+  - {x: -27.109495, y: -8.245216}
+  - {x: -27.07245, y: -7.068627}
+  - {x: -28.014608, y: -6.124889}
+  - {x: -28.01644, y: 4.0387926}
+  - {x: -29.954027, y: 5.8126054}
+  - {x: -30.00762, y: 7.93511}
+  - {x: -33.69492, y: 11.480668}
 --- !u!1 &2103360691
 GameObject:
   m_ObjectHideFlags: 0

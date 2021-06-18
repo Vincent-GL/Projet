@@ -25,7 +25,8 @@ public class Anim : MonoBehaviour
     
     void Update()
     {
-        bool run = player.X == 1 || player.X == -1;
+        float x = Input.GetAxisRaw("Horizontal");
+        bool run = x == 1 || x == -1;
         if (run&&player.Grounded)
         {
             state = StateAnim.course;
