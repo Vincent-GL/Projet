@@ -14,8 +14,8 @@ public class Joueurblesse : MonoBehaviour
         if (health <= 0)
         {
             IsDead();
-            lives--;
-            health = 5;
+            
+            
         }
         else
             Isknocked(right);
@@ -24,6 +24,14 @@ public class Joueurblesse : MonoBehaviour
     void IsDead()
     {
         this.transform.position = spawnPoint;
+        health = 5;
+        lives--;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Respawn"))
+            IsDead();
     }
 
 
