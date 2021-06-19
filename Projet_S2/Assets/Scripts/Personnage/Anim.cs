@@ -30,19 +30,19 @@ public class Anim : MonoBehaviour
         if (run&&player.Grounded)
         {
             state = StateAnim.course;
-            Debug.Log("cours");
+            
             
         }
         else if (!run && player.Grounded)
         {
             state = StateAnim.idle;
-            Debug.Log("rien");
+            
             
         }
         if (!player.Grounded)
         {
             state = StateAnim.jump;
-            Debug.Log("saute");
+            
             
         }
         Animation();

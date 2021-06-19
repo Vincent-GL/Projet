@@ -11,11 +11,7 @@ public class mouv : MonoBehaviour
     private float x;
     public float X { get { return x; } }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    
 
     //saut
     void Update()

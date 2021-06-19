@@ -8,6 +8,12 @@ public class Joueurblesse : MonoBehaviour
     public int health = 5;
     public Vector3 spawnPoint;
     public int lives;
+    public healthbar healthba;
+
+    void Start()
+    {
+        healthba.SetMaxHealth(health);
+    }
     public void Hurt(bool right)// ajouter un int pour differencier le nombre de dégats infligés ?
     {
         health--;
@@ -18,7 +24,10 @@ public class Joueurblesse : MonoBehaviour
             
         }
         else
+        {
             Isknocked(right);
+            healthba.SetHealth(health);
+        }
     }
 
     void IsDead()
