@@ -20,6 +20,16 @@ public class GameManager : MonoBehaviourPunCallbacks
         gamecanvas.SetActive(false);
         gamecamera.SetActive(false);
     }
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadScene(0); // charge la scène de choix du nom pour rejoindre un match
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+        Debug.Log("leaving");
+    }
     /*public GameObject playerstructure;
 
     void Start()
