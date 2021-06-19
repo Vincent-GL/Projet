@@ -53,7 +53,7 @@ public class Joueurblesse : MonoBehaviour
         {
              force = new Vector2(-4, 8);
         }
-        for(int i=0;i<4;i++)
+        for(int i=0;i<3;i++)
         {
             rb.velocity = force;
         }

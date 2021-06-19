@@ -28,4 +28,5 @@ public class Eggammo : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
 }

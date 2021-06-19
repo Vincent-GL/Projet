@@ -31,7 +31,6 @@ public class knockbackE : MonoBehaviour
                 {
                     playerscript.Hurt(true);
                 
-                    
                 }
                 else
                 {
