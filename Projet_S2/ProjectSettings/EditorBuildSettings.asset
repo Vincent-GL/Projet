@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/test-multi.unity
     guid: 6cd480561b59d3d47b29ea7f9957fa2c
+  - enabled: 1
+    path: Assets/Scenes/Niveau2Partie1.unity
+    guid: 27f9cdb6283114e488fc645aa58ab399
   m_configObjects: {}
