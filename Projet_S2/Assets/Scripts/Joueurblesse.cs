@@ -35,6 +35,7 @@ public class Joueurblesse : MonoBehaviour
         this.transform.position = spawnPoint;
         health = 5;
         lives--;
+        healthba.SetHealth(health);
     }
 
     void OnCollisionEnter2D(Collision2D col)
