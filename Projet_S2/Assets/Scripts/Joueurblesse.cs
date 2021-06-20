@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Joueurblesse : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Joueurblesse : MonoBehaviour
         lives--;
         healthba.SetHealth(health);
         healthba.SetLives(lives);
+        if (lives == 0)
+            SceneManager.LoadScene("Game Over");
     }
 
     void OnCollisionEnter2D(Collision2D col)

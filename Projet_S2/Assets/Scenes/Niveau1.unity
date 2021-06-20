@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf5916b20f1ae74aa7cbc8cf5c30a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  niveau: 9
+  niveau: 8
 --- !u!61 &428654488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19852,6 +19852,7 @@ MonoBehaviour:
   speed: 6
   jumphigh: 7
   rb: {fileID: 1698242007}
+  SoundJump: {fileID: 8300000, guid: 457bcad6c591d5f489b2871cef87c0fc, type: 3}
 --- !u!114 &1698242011
 MonoBehaviour:
   m_ObjectHideFlags: 0

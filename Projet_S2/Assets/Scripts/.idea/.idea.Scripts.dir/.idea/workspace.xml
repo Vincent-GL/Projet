@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbbc0932-f874-4ca0-ba5b-21ce769bb95c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Scenes/Launcher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Launcher.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Niveau1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Niveau1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/NouveauNiveau.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NouveauNiveau.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Paramètres.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Paramètres.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Room for 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Room for 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Room for 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Room for 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personnage/.idea/.idea.Personnage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Personnage/.idea/.idea.Personnage.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SettingsMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Joueurblesse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Joueurblesse.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +31,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/vincent.goguyer-lalande/Projet_S2/Assets/Scripts/Joueurblesse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Joueurblesse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code/PhotonHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IArti/Weaponbidirect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SettingsMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/transitionNiveau.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -58,8 +48,9 @@
         <option value="$PROJECT_DIR$/Options.cs" />
         <option value="$PROJECT_DIR$/Settings.cs" />
         <option value="$PROJECT_DIR$/transitionNiveau.cs" />
-        <option value="$PROJECT_DIR$/Menu.cs" />
         <option value="$PROJECT_DIR$/SettingsMenu.cs" />
+        <option value="$PROJECT_DIR$/Menu.cs" />
+        <option value="$PROJECT_DIR$/Joueurblesse.cs" />
       </list>
     </option>
   </component>
@@ -96,6 +87,9 @@
       <workItem from="1623784197253" duration="603000" />
       <workItem from="1623945109782" duration="836000" />
       <workItem from="1623955774932" duration="1237000" />
+      <workItem from="1624200405910" duration="423000" />
+      <workItem from="1624202980965" duration="4428000" />
+      <workItem from="1624212835139" duration="321000" />
     </task>
     <servers />
   </component>

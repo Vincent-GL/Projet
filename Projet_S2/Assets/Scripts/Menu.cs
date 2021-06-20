@@ -26,6 +26,11 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Niveau1");
     }
+    
+    public void Niveau2()
+    {
+        SceneManager.LoadScene("Niveau2Partie1");
+    }
 
     public void CloseSettings()
     {

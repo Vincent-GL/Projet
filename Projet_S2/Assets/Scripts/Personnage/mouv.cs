@@ -10,6 +10,8 @@ public class mouv : MonoBehaviour
     private bool IsGrounded = false;
     private float x;
     public float X { get { return x; } }
+    
+    public AudioClip SoundJump; //enleve pas cette ligne
 
     
 
@@ -19,6 +21,7 @@ public class mouv : MonoBehaviour
         if (Input.GetKeyDown("space") && IsGrounded)
         {
             jump();
+            GetComponent<AudioSource>().PlayOneShot(SoundJump); // bruit du saut
         }
 
         float x = Input.GetAxisRaw("Horizontal");

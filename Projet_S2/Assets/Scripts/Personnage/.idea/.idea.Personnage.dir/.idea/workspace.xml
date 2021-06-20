@@ -22,7 +22,9 @@
     <list default="true" id="d88e5366-0b78-421b-9834-758ddd50436d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Scenes/Leveltuto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scenes/Leveltuto.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Scenes/Niveau1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scenes/Niveau1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Scenes/NouveauNiveau.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scenes/NouveauNiveau.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Personnage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Personnage.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tir.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tir.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mouv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/mouv.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/mouv.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tir.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gunmove.cs" root0="SKIP_HIGHLIGHTING" />
@@ -42,8 +45,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tir.cs" />
         <option value="$PROJECT_DIR$/../IArti/WeakpointE.cs" />
+        <option value="$PROJECT_DIR$/Tir.cs" />
         <option value="$PROJECT_DIR$/mouv.cs" />
       </list>
     </option>
@@ -70,6 +73,7 @@
       <updated>1623843051548</updated>
       <workItem from="1623843078228" duration="4741000" />
       <workItem from="1623866532705" duration="300000" />
+      <workItem from="1624094879950" duration="702000" />
     </task>
     <servers />
   </component>
