@@ -7,6 +7,7 @@ TagManager:
   - sol
   - gm
   - Enemy
+  - bullet
   layers:
   - Default
   - TransparentFX

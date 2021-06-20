@@ -52,9 +52,17 @@ public class Tir : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(Firepointposition, mousePosition - Firepointposition, Mathf.Infinity, notToHit);
 
-        Debug.DrawLine(Firepointposition, (mousePosition - Firepointposition) * 100, Color.red);
+        Debug.DrawLine(Firepointposition, (mousePosition - Firepointposition) * 1000);
 
-        Debug.Log("fire");
+        Effect();
+
+
+
         GetComponent<AudioSource>().PlayOneShot(SoundShoot);
+    }
+
+    private void Effect()
+    {
+        Instantiate(bullettrailPrefab, firepoint.position, firepoint.rotation);
     }
 }
