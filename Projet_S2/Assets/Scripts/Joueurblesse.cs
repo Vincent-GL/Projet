@@ -19,9 +19,7 @@ public class Joueurblesse : MonoBehaviour
         health--;
         if (health <= 0)
         {
-            IsDead();
-            
-            
+            IsDead();            
         }
         else
         {
@@ -36,6 +34,7 @@ public class Joueurblesse : MonoBehaviour
         health = 5;
         lives--;
         healthba.SetHealth(health);
+        healthba.SetLives(lives);
     }
 
     void OnCollisionEnter2D(Collision2D col)
