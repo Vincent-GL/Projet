@@ -21,9 +21,9 @@ public class WeakpointE : MonoBehaviour
         BDplayer = player.GetComponent<BoxCollider2D>();
         bodyplayer = player.GetComponent<Rigidbody2D>();
     }
-    /*
+    
     void Update()
-    {
+    {/*
         if (BDennemi.IsTouching(BDplayer))
         {
             bodyplayer.velocity += new Vector2(0, 2f);
@@ -48,8 +48,14 @@ public class WeakpointE : MonoBehaviour
         {
             //  Instantiate(deatheffect, transform.position, Quaternion.identity);
             GameObject.Destroy(ennemi);
+        }*/
+
+        if (BDennemi.IsTouching(BDplayer))
+        {
+            bodyplayer.velocity += new Vector2(0, 2f);
+            GameObject.Destroy(ennemi);
         }
-    }*/
+    }/*
     void OnTriggerEnter2D(Collider2D cible)
     {
         if(cible.tag== "Player")
@@ -66,5 +72,5 @@ public class WeakpointE : MonoBehaviour
             GameObject.Destroy(ennemi);
         }
 
-    }
+    }*/
 }
