@@ -131,7 +131,7 @@ MonoBehaviour:
   jumphigh: 7
   rb: {fileID: 5694489814189985815}
   SoundJump: {fileID: 8300000, guid: 457bcad6c591d5f489b2871cef87c0fc, type: 3}
---- !u!114 &1698242011
+--- !u!114 &1708720792587019350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,10 +140,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 5694489814189985813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2e639d6f2a4ef42aec99f27149a73d, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 4939471607834072550}
+  - {fileID: 6023937734512583709}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &2594533848383700284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694489814189985813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ef86492e205044781e839f8de63008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+--- !u!114 &4939471607834072550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694489814189985813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &5221028705588497637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,11 +196,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04231376ff3bb5045b6206418b27c27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumphigh: 7
   spr: {fileID: 5694489814189985801}
   speed: 5
   rb: {fileID: 5694489814189985815}
   Playercamera: {fileID: 7130501530153890041}
   anim: {fileID: 1698242006}
+--- !u!114 &6023937734512583709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694489814189985813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: course
+  - Type: 4
+    SynchronizeType: 0
+    Name: idle
+  - Type: 4
+    SynchronizeType: 0
+    Name: grounded
+  - Type: 4
+    SynchronizeType: 0
+    Name: jump
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &7130501530153890041
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &278265511987911284
 Transform:
   m_ObjectHideFlags: 0

@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec77b12116b35049af99b64115f8ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plstruct: {fileID: 7327117413209080721, guid: 7f313f4d64c29a549b41d845e0685843,
+  plstruct: {fileID: 5694489814189985813, guid: 6e51c8f31be770845bb71862c509207b,
     type: 3}
   gamecanvas: {fileID: 74148312}
   gamecamera: {fileID: 1162370619}

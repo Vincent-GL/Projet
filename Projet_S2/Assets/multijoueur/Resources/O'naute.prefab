@@ -258,7 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04231376ff3bb5045b6206418b27c27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumphigh: 7
   spr: {fileID: 8275133299869725302}
   speed: 5
   rb: {fileID: 7065732917318790472}
   Playercamera: {fileID: 1471110625}
+  anim: {fileID: 0}
