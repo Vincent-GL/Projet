@@ -7,13 +7,15 @@ using Photon.Realtime;
 using Photon;
 public class joueur_multi : MonoBehaviourPunCallbacks
 {
+    public float jumphigh = 7f;
    public  SpriteRenderer spr;
   //  public Text NomJoueur;
-    public float speed=5f;
+    public float speed=15f;
     //public float jumphigh;
      private bool IsGrounded = false;
     public Rigidbody2D rb;
     public GameObject Playercamera;
+    public Animator anim;
     private void Awake()
     {
         if(photonView.IsMine)
@@ -42,7 +44,30 @@ public class joueur_multi : MonoBehaviourPunCallbacks
             spr.flipX = false;
         }
 
+        if (Input.GetKeyDown("space") && IsGrounded)
+        {
+            jump();
+        }
     }
+    public void jump()
+    {
+        rb.velocity += new Vector2(0, jumphigh);
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("sol"))
+        {
+            IsGrounded = true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("sol"))
+        {
+            IsGrounded = false;
+        }
+    }
+}
   
    // public static GameObject LocalPlayerInstance;
    /* void Awake()
@@ -94,4 +119,4 @@ public class joueur_multi : MonoBehaviourPunCallbacks
             IsGrounded = false;
         }
     }*/
-}
+//}
