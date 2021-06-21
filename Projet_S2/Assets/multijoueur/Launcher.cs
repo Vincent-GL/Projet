@@ -64,6 +64,6 @@ public class Launcher : MonoBehaviourPunCallbacks
             Debug.Log("We load the 'Room for 1' ");
             PhotonNetwork.LoadLevel("Room for 1");
         }*/
-        PhotonNetwork.LoadLevel("test-multi");
+        PhotonNetwork.LoadLevel("Room for 2");
     }
 }
