@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbbc0932-f874-4ca0-ba5b-21ce769bb95c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Joueurblesse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Joueurblesse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Game Over.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Game Over.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Leveltuto.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +93,7 @@
       <workItem from="1624200405910" duration="423000" />
       <workItem from="1624202980965" duration="4428000" />
       <workItem from="1624212835139" duration="321000" />
+      <workItem from="1624277340323" duration="592000" />
     </task>
     <servers />
   </component>

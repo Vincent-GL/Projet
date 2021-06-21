@@ -10,10 +10,12 @@ public class Joueurblesse : MonoBehaviour
     public Vector3 spawnPoint;
     public int lives;
     public healthbar healthba;
+    public GameObject gameover;
 
     void Start()
     {
         healthba.SetMaxHealth(health);
+        gameover.SetActive(false);
     }
     public void Hurt(bool right)// ajouter un int pour differencier le nombre de dégats infligés ?
     {
@@ -37,7 +39,16 @@ public class Joueurblesse : MonoBehaviour
         healthba.SetHealth(health);
         healthba.SetLives(lives);
         if (lives == 0)
-            SceneManager.LoadScene("Game Over");
+        {
+            Time.timeScale = 0; // pour game over
+            gameover.SetActive(true);
+        }
+    }
+    
+    public void Replay() // game over
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     void OnCollisionEnter2D(Collision2D col)
