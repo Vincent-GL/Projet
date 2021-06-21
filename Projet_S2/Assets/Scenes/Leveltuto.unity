@@ -1623,6 +1623,36 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 112.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275141191205904387, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.107002
+      objectReference: {fileID: 0}
     - target: {fileID: 8275141191593856608, guid: b973883227e35534d80adb69d3ab606e,
         type: 3}
       propertyPath: m_Name
@@ -29968,6 +29998,7 @@ MonoBehaviour:
   lives: 3
   healthba: {fileID: 954088960}
   gameover: {fileID: 1623805976}
+  dmg: 1
 --- !u!95 &1588158355
 Animator:
   serializedVersion: 3
