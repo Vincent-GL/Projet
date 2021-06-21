@@ -4029,9 +4029,10 @@ GameObject:
   - component: {fileID: 549403516}
   - component: {fileID: 549403521}
   - component: {fileID: 549403522}
+  - component: {fileID: 549403523}
   m_Layer: 0
   m_Name: prj
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4196,6 +4197,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f026e4c5d26a147bfbd06b041a9c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &549403523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549403515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edb116c316f1834ea60b4178c2de34b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PV: 2
 --- !u!1 &671976454
 GameObject:
   m_ObjectHideFlags: 0
@@ -25537,6 +25551,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 803393093, guid: c548b002e82c8a448834ebbeab07edaa, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7082481175567431266}
     - target: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_Name
@@ -25560,12 +25578,12 @@ PrefabInstance:
     - target: {fileID: 7151240728230071031, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.32
+      value: -10.52
       objectReference: {fileID: 0}
     - target: {fileID: 7151240728230071031, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.97
+      value: -5.03
       objectReference: {fileID: 0}
     - target: {fileID: 7151240728230071031, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}

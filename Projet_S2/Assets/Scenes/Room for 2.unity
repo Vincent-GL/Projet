@@ -1924,6 +1924,8 @@ GameObject:
   - component: {fileID: 384814262}
   - component: {fileID: 384814264}
   - component: {fileID: 384814263}
+  - component: {fileID: 384814266}
+  - component: {fileID: 384814265}
   m_Layer: 0
   m_Name: Plan principal
   m_TagString: Untagged
@@ -3012,6 +3014,46 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &384814265
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384814261}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.5462296, y: 1.1039286}
+  - {x: -3.2717974, y: 1.2606329}
+  - {x: -3.0515618, y: 1.727311}
+  - {x: -3.0620854, y: 1.9798656}
+  - {x: -3.8957293, y: 2.0042262}
+  - {x: -3.9835253, y: 1.8494494}
+  - {x: -3.776616, y: 1.2116846}
+  - {x: -3.5485544, y: 1.078309}
+--- !u!19719996 &384814266
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384814261}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &395156096
 GameObject:
   m_ObjectHideFlags: 0
@@ -4391,7 +4433,7 @@ GameObject:
   - component: {fileID: 2146359313}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

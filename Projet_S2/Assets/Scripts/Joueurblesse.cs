@@ -11,6 +11,7 @@ public class Joueurblesse : MonoBehaviour
     public int lives;
     public healthbar healthba;
     public GameObject gameover;
+    public float dmg = 1;
 
     void Start()
     {
@@ -80,5 +81,12 @@ public class Joueurblesse : MonoBehaviour
         {
             rb.velocity = force;
         }
+    }
+
+    
+
+    public void Attaque(Fight ennemy)
+    {
+        ennemy.GetDmg(dmg);
     }
 }
