@@ -25570,6 +25570,16 @@ PrefabInstance:
       propertyPath: healthba
       value: 
       objectReference: {fileID: 859687839}
+    - target: {fileID: 7151240728230071028, guid: c548b002e82c8a448834ebbeab07edaa,
+        type: 3}
+      propertyPath: spawnPoint.x
+      value: -10.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151240728230071028, guid: c548b002e82c8a448834ebbeab07edaa,
+        type: 3}
+      propertyPath: spawnPoint.y
+      value: -5.03
+      objectReference: {fileID: 0}
     - target: {fileID: 7151240728230071031, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_RootOrder
