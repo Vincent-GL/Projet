@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveau2Partie1.unity
     guid: 27f9cdb6283114e488fc645aa58ab399
   - enabled: 1
+    path: Assets/Scenes/Niveau2Partie2.unity
+    guid: 1982d6eee7ace994e82c743d96d2938a
+  - enabled: 1
     path: "Assets/Scenes/Param\xE8tres.unity"
     guid: a12b9f8d5d7ef3846afcdf10d462ef59
   - enabled: 1
