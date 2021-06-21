@@ -15,32 +15,32 @@ public class WeakpointE : MonoBehaviour
 
     void Start()
     {
-        
+
         player = GameObject.FindGameObjectWithTag("Player");
         BDennemi = GetComponent<BoxCollider2D>();
         BDplayer = player.GetComponent<BoxCollider2D>();
         bodyplayer = player.GetComponent<Rigidbody2D>();
     }
-    
+    /*
     void Update()
     {
         if (BDennemi.IsTouching(BDplayer))
         {
             bodyplayer.velocity += new Vector2(0, 2f);
-            if(countdown<=0)
+            if (countdown <= 0)
             {
                 countdown += 5;
                 health--;
             }
             countdown += 5;
             health--; //ceci permet de produire un effet de rebond tout en blessant l'ennemi
-            if(health<=0)
+            if (health <= 0)
             {
-              //  Instantiate(deatheffect, transform.position, Quaternion.identity);
+                //  Instantiate(deatheffect, transform.position, Quaternion.identity);
                 GameObject.Destroy(ennemi);
             }
         }
-        if(countdown>0)
+        if (countdown > 0)
         {
             countdown--;
         }
@@ -49,5 +49,22 @@ public class WeakpointE : MonoBehaviour
             //  Instantiate(deatheffect, transform.position, Quaternion.identity);
             GameObject.Destroy(ennemi);
         }
+    }*/
+    void OnTriggerEnter2D(Collider2D cible)
+    {
+        if(cible.tag== "Player")
+        {
+            bodyplayer.velocity += new Vector2(0, 2f);
+            health -= 10;
+        }
+        if(cible.tag=="bullet")
+        {
+            health -= 5;
+        }
+        if(health<=0)
+        {
+            GameObject.Destroy(ennemi);
+        }
+
     }
 }
