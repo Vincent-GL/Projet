@@ -510,7 +510,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf000000000000000000000000000000000000000000000000000000000000000000000000
+      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -1185,6 +1185,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275141189812133879, guid: b973883227e35534d80adb69d3ab606e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1307,6 +1317,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b973883227e35534d80adb69d3ab606e, type: 3}
+--- !u!114 &589396031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 590234511024319015, guid: b973883227e35534d80adb69d3ab606e,
+    type: 3}
+  m_PrefabInstance: {fileID: 589396030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &660589638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1376,7 @@ Transform:
   - {fileID: 877156213}
   - {fileID: 1536186045}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741128636
 GameObject:
@@ -1523,9 +1545,10 @@ GameObject:
   - component: {fileID: 816321070}
   - component: {fileID: 816321072}
   - component: {fileID: 816321071}
+  - component: {fileID: 816321073}
   m_Layer: 0
   m_Name: "Qautri\xE8me Plan"
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3119,6 +3142,24 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &816321073
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816321069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -65.07044, y: -33.879993}
+  - {x: 293.34344, y: -34.57223}
 --- !u!1 &821847241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
@@ -13963,6 +14004,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1698242010, guid: c548b002e82c8a448834ebbeab07edaa, type: 3}
+      propertyPath: jumphigh
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_Name
@@ -13977,7 +14022,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthba
       value: 
-      objectReference: {fileID: 1119055014}
+      objectReference: {fileID: 589396031}
     - target: {fileID: 7151240728230071028, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: spawnPoint.x
@@ -14121,7 +14166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040797113
 GameObject:
@@ -18700,18 +18745,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1119055014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8275141191688614101, guid: b973883227e35534d80adb69d3ab606e,
-    type: 3}
-  m_PrefabInstance: {fileID: 589396030}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1127412408
 GameObject:
   m_ObjectHideFlags: 0
@@ -19573,7 +19606,7 @@ Transform:
   m_Children:
   - {fileID: 75307939}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1650378763
 MonoBehaviour:
@@ -25310,6 +25343,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.7000427, y: 0}
+  m_AnchoredPosition: {x: 0.70007324, y: 0}
   m_SizeDelta: {x: -146.77039, y: -94.3186}
   m_Pivot: {x: 0.5, y: 0.5}

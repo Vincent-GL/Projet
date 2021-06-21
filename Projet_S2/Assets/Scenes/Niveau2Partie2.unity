@@ -128,6 +128,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275141189812133879, guid: b973883227e35534d80adb69d3ab606e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -280,18 +290,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b973883227e35534d80adb69d3ab606e, type: 3}
---- !u!114 &93406017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8275141191688614101, guid: b973883227e35534d80adb69d3ab606e,
-    type: 3}
-  m_PrefabInstance: {fileID: 93406016}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &93784315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
@@ -93556,7 +93554,7 @@ Transform:
   - {fileID: 342790071}
   - {fileID: 601023678}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792886083
 GameObject:
@@ -99294,6 +99292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1698242010, guid: c548b002e82c8a448834ebbeab07edaa, type: 3}
+      propertyPath: jumphigh
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_Name
@@ -99308,7 +99310,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthba
       value: 
-      objectReference: {fileID: 93406017}
+      objectReference: {fileID: 1856732541}
     - target: {fileID: 7151240728230071028, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: spawnPoint.x
@@ -100442,7 +100444,7 @@ Transform:
   m_Children:
   - {fileID: 1325710576}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1550130625
 MonoBehaviour:
@@ -100598,6 +100600,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854242444}
   m_CullTransparentMesh: 0
+--- !u!114 &1856732541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 590234511024319015, guid: b973883227e35534d80adb69d3ab606e,
+    type: 3}
+  m_PrefabInstance: {fileID: 93406016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1882667197
 GameObject:
   m_ObjectHideFlags: 0

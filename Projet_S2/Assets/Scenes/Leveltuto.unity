@@ -936,7 +936,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704802081
 GameObject:
@@ -1287,7 +1287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839793886
 GameObject:
@@ -1392,7 +1392,7 @@ Transform:
   - {fileID: 1810470495}
   - {fileID: 2036694352}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &839793890
 Rigidbody2D:
@@ -1593,20 +1593,8 @@ Transform:
   - {fileID: 1084365761}
   - {fileID: 1216282631}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954088960 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8275141191688614101, guid: b973883227e35534d80adb69d3ab606e,
-    type: 3}
-  m_PrefabInstance: {fileID: 983881336}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &983881336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1614,6 +1602,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275141189812133879, guid: b973883227e35534d80adb69d3ab606e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1736,6 +1734,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b973883227e35534d80adb69d3ab606e, type: 3}
+--- !u!114 &983881337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 590234511024319015, guid: b973883227e35534d80adb69d3ab606e,
+    type: 3}
+  m_PrefabInstance: {fileID: 983881336}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29612363887d1448b6c7e039147f179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1027161225
 GameObject:
   m_ObjectHideFlags: 0
@@ -29656,7 +29666,7 @@ Transform:
   m_LocalScale: {x: 1.0424, y: 1.0424, z: 1.0424}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495339480
 GameObject:
@@ -29949,7 +29959,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1588158354
 MonoBehaviour:
@@ -29967,7 +29977,7 @@ MonoBehaviour:
   health: 5
   spawnPoint: {x: -15.58, y: -4.59, z: 0}
   lives: 3
-  healthba: {fileID: 954088960}
+  healthba: {fileID: 983881337}
   gameover: {fileID: 1623805976}
   dmg: 1
 --- !u!95 &1588158355
@@ -30133,7 +30143,7 @@ RectTransform:
   - {fileID: 1623805980}
   - {fileID: 704802082}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -30419,7 +30429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716061026
 GameObject:
@@ -30731,7 +30741,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2010797718
 MonoBehaviour:
