@@ -19,7 +19,7 @@ public class Tir : MonoBehaviour
     
     public AudioClip SoundShoot;
 
-    public Joueurblesse player;
+    //public Joueurblesse player;
 
 
     private void Awake()
@@ -60,14 +60,14 @@ public class Tir : MonoBehaviour
 
         GetComponent<AudioSource>().PlayOneShot(SoundShoot);
 
-        if (hit.collider != null)
+        /*if (hit.collider != null)
         {
             if (hit.collider.tag.Equals("Enemy"))
             {
                 Fight enemy = hit.collider.gameObject.GetComponent<Fight>();
                 player.Attaque(enemy);
             }
-        }
+        }*/
     }
 
     private void Effect()
