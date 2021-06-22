@@ -25801,6 +25801,11 @@ PrefabInstance:
       propertyPath: firerate
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1698242003, guid: c548b002e82c8a448834ebbeab07edaa, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: bce4ae42c7733bc49a5caa1ba004a1f2,
+        type: 2}
     - target: {fileID: 7151240728230071018, guid: c548b002e82c8a448834ebbeab07edaa,
         type: 3}
       propertyPath: m_Name

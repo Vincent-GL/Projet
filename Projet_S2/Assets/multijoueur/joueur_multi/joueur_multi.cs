@@ -54,11 +54,11 @@ public class joueur_multi : MonoBehaviourPunCallbacks
     {
         var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
         transform.position += move * speed * Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.LeftArrow))
         {
             spr.flipX = true;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown(KeyCode.RightArrow))
         {
             spr.flipX = false;
         }
