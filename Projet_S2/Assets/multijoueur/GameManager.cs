@@ -5,12 +5,14 @@ using Photon.Pun;
 using Photon.Realtime;
 public class GameManager : MonoBehaviourPunCallbacks
 {
+    public static GameManager instance;
     public GameObject plstruct;
     public GameObject gamecanvas;
     public GameObject gamecamera;
 
     private void Awake()
     {
+        instance = this;
         gamecanvas.SetActive(true);
     }
     public void SpawnPlayer()
