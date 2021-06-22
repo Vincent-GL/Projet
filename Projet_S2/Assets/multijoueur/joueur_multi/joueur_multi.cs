@@ -27,7 +27,7 @@ public class joueur_multi : MonoBehaviourPunCallbacks
         else
         {
             NomJoueur.text = photonView.Owner.NickName;
-            NomJoueur.color = Color.cyan;
+            NomJoueur.color = Color.red;
         }
     }
 
