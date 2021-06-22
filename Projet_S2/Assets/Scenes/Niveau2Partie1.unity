@@ -7555,6 +7555,8 @@ GameObject:
   - component: {fileID: 913376490}
   - component: {fileID: 913376489}
   - component: {fileID: 913376491}
+  - component: {fileID: 913376492}
+  - component: {fileID: 913376493}
   m_Layer: 0
   m_Name: Plan Principal
   m_TagString: sol
@@ -14094,6 +14096,57 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!68 &913376492
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913376487}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 133.95679, y: -4.9845614}
+  - {x: 131.99454, y: -4.966253}
+  - {x: 131.03499, y: -4.020034}
+  - {x: 127.32908, y: -3.9824648}
+  - {x: 127.323586, y: -3.2970173}
+  - {x: 131.66652, y: -3.2775192}
+  - {x: 131.67503, y: -4.0110617}
+  - {x: 143.0667, y: -4.0084934}
+  - {x: 142.1452, y: -4.959286}
+  - {x: 134.06242, y: -4.9836235}
+--- !u!68 &913376493
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913376487}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 224.95493, y: 24.977123}
+  - {x: 225.99884, y: 25.006935}
+  - {x: 225.97444, y: 25.990059}
+  - {x: 226.9801, y: 26.007183}
+  - {x: 226.99669, y: 27.016695}
+  - {x: 228.56708, y: 26.967604}
+  - {x: 228.5403, y: 27.635809}
+  - {x: 235.56541, y: 27.528376}
+  - {x: 235.84213, y: 64.80092}
 --- !u!1001 &937945086
 PrefabInstance:
   m_ObjectHideFlags: 0
