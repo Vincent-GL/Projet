@@ -9,7 +9,7 @@ public class joueur_multi : MonoBehaviourPunCallbacks
 {
     public float jumphigh = 7f;
    public  SpriteRenderer spr;
-  //  public Text NomJoueur;
+    public Text NomJoueur;
     public float speed=15f;
     //public float jumphigh;
      private bool IsGrounded = false;
@@ -20,7 +20,13 @@ public class joueur_multi : MonoBehaviourPunCallbacks
     {
         if(photonView.IsMine)
         {
+            NomJoueur.text = PhotonNetwork.NickName;
             Playercamera.SetActive(true);
+        }
+        else
+        {
+            NomJoueur.text = photonView.Owner.NickName;
+            NomJoueur.color = Color.cyan;
         }
     }
 

@@ -21,9 +21,10 @@ public class WeakpointE : MonoBehaviour
         BDplayer = player.GetComponent<BoxCollider2D>();
         bodyplayer = player.GetComponent<Rigidbody2D>();
     }
-    
+
     void Update()
-    {/*
+    {
+    /*
         if (BDennemi.IsTouching(BDplayer))
         {
             bodyplayer.velocity += new Vector2(0, 2f);

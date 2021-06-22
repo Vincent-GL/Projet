@@ -9,10 +9,9 @@ public class webullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D cible)
     {
         //GameObject.Destroy(ennemi);
-        
         if (cible.tag == "bullet")
         {
-            health--; ;
+            health--; 
         }
         if (health <= 0)
         {
