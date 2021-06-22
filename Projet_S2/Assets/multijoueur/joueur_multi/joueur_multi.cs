@@ -36,18 +36,19 @@ public class joueur_multi : MonoBehaviourPunCallbacks
         if(photonView.IsMine)
         {
             CheckInput();
+            if (transform.position.y < -10f)
+            {
+                    PhotonNetwork.DestroyAll();
+                   GameManager.instance.gamecamera.SetActive(true);
+                GameManager.instance.gamecanvas.SetActive(true);
+
+                //  GameManager.instance.LeaveRoom();
+                //  PhotonNetwork.LeaveLobby();
+                // SceneManager.LoadScene(0);
+            }
         }
 
-        if(transform.position.y<-10f)
-        {
-            PhotonNetwork.DestroyAll();
-            GameManager.instance.gamecamera.SetActive(true);
-            GameManager.instance.gamecanvas.SetActive(true);
-           
-          //  GameManager.instance.LeaveRoom();
-          //  PhotonNetwork.LeaveLobby();
-           // SceneManager.LoadScene(0);
-        }
+        
     }
     private void CheckInput()
     {
