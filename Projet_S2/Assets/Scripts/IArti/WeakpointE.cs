@@ -53,7 +53,7 @@ public class WeakpointE : MonoBehaviour
 
         if (BDennemi.IsTouching(BDplayer))
         {
-            bodyplayer.velocity += new Vector2(0, 2f);
+            bodyplayer.velocity += new Vector2(0, 8f);
             GameObject.Destroy(ennemi);
         }
     }/*

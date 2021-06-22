@@ -4279,7 +4279,6 @@ GameObject:
   - component: {fileID: 671976461}
   - component: {fileID: 671976460}
   - component: {fileID: 671976455}
-  - component: {fileID: 671976457}
   m_Layer: 0
   m_Name: HiddenEnnemi
   m_TagString: Untagged
@@ -4294,7 +4293,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671976454}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b191b2634ffd314584efd344e1bc191, type: 3}
   m_Name: 
@@ -4304,27 +4303,6 @@ MonoBehaviour:
     type: 3}
   nextfire: 0
   fireRate: 2.5
---- !u!50 &671976457
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671976454}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &671976460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4382,16 +4360,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671976454}
-  m_LocalRotation: {x: -0, y: -0, z: -0.6965729, w: 0.71748596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.956, y: 13.191, z: 0}
   m_LocalScale: {x: 0.12934718, y: -0.103672676, z: 1}
   m_Children:
   - {fileID: 1556684994}
   - {fileID: 1740372703}
-  - {fileID: 1572747729}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -88.30501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673993413
 GameObject:
   m_ObjectHideFlags: 0
@@ -20526,7 +20503,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.7349149, y: 5.4112644}
+  m_Offset: {x: -3.3171685, y: -0.44231176}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -20537,7 +20514,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.761524, y: 9.109331}
+  m_Size: {x: 9.726435, y: 12.046269}
   m_EdgeRadius: 0
 --- !u!1 &1572747728
 GameObject:
@@ -20564,12 +20541,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572747728}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 5.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.622, y: 12.635, z: 0}
+  m_LocalScale: {x: 0.12934718, y: -0.103672676, z: 1}
   m_Children: []
-  m_Father: {fileID: 671976461}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1572747730
 MonoBehaviour:
@@ -20595,10 +20572,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2531117, y: 0.11342907}
+  m_Offset: {x: 1.2531118, y: -5.844118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -20609,7 +20586,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.2488, y: 10.270834}
+  m_Size: {x: 8.2488, y: 13.428358}
   m_EdgeRadius: 0
 --- !u!1 &1579008320
 GameObject:
@@ -20869,7 +20846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740372702}
   m_LocalRotation: {x: 0.0039707385, y: -0.004367197, z: 0.65053433, w: 0.7594539}
-  m_LocalPosition: {x: -4.8, y: -0.89, z: 0}
+  m_LocalPosition: {x: -8.06, y: -1, z: -0}
   m_LocalScale: {x: 7.731131, y: 9.74277, z: 1}
   m_Children: []
   m_Father: {fileID: 671976461}
@@ -25925,6 +25902,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5144674899290502600, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144674899290502600, guid: b973883227e35534d80adb69d3ab606e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6679935002890213593, guid: b973883227e35534d80adb69d3ab606e,
         type: 3}
       propertyPath: m_AnchorMax.y
