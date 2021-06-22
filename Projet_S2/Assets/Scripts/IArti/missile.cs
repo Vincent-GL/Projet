@@ -17,7 +17,7 @@ public class missile : MonoBehaviour
         movedir = (cible.transform.position - transform.position).normalized * speed;
         if(movedir.x<0)//cible.transform.position.x<transform.position.x)
         {
-            rb.SetRotation(360f);
+             rb.SetRotation(360f);
         }
         rb.velocity = new Vector2(movedir.x, movedir.y);
     }
