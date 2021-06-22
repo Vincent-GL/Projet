@@ -31,6 +31,16 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Niveau2Partie1");
     }
+    
+    public void Niveau2Part2()
+	{
+		SceneManager.LoadScene("Niveau2Partie2");
+	}
+
+	public void Choix()
+	{
+		SceneManager.LoadScene("Choixduniveau");
+	}
 
     public void CloseSettings()
     {

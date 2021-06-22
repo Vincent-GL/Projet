@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbbc0932-f874-4ca0-ba5b-21ce769bb95c" name="Default Changelist" comment="" />
+    <list default="true" id="dbbc0932-f874-4ca0-ba5b-21ce769bb95c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Scenes/Niveau2Partie1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Niveau2Partie1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,8 +51,8 @@
         <option value="$PROJECT_DIR$/Settings.cs" />
         <option value="$PROJECT_DIR$/transitionNiveau.cs" />
         <option value="$PROJECT_DIR$/SettingsMenu.cs" />
-        <option value="$PROJECT_DIR$/Menu.cs" />
         <option value="$PROJECT_DIR$/Joueurblesse.cs" />
+        <option value="$PROJECT_DIR$/Menu.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +93,7 @@
       <workItem from="1624202980965" duration="4428000" />
       <workItem from="1624212835139" duration="321000" />
       <workItem from="1624277340323" duration="592000" />
+      <workItem from="1624361375890" duration="824000" />
     </task>
     <servers />
   </component>

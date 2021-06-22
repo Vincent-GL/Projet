@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 using Photon;
+using UnityEngine.SceneManagement;
 public class joueur_multi : MonoBehaviourPunCallbacks
 {
     public float jumphigh = 7f;
@@ -35,6 +36,12 @@ public class joueur_multi : MonoBehaviourPunCallbacks
         if(photonView.IsMine)
         {
             CheckInput();
+        }
+
+        if(transform.position.y<-10f)
+        {
+            PhotonNetwork.LeaveLobby();
+            SceneManager.LoadScene(0);
         }
     }
     private void CheckInput()
